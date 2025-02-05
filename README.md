@@ -22,15 +22,15 @@ max allowed time (for example 30 sec). Before client is disconnected, server sho
 send a special timeout event. The contents of the timeout event should be the time how
 long client	was	connected.	Note	that	this	event	is	not	a	message.
 
-Example of receiving message events:
-GET /infocenter/test HTTP/1.0
-Host: localhost
-HTTP/1.0 200 OK
-Cache-Control: no-cache
-Content-Type: text/event-stream
-Date: Mon, 14 Sep 2015 08:33:46 GMT
-id: 7
-event: msg
-data: labas
-event: timeout
+Example of receiving message events:<br>
+GET /infocenter/test HTTP/1.0<br>
+Host: localhost<br>
+HTTP/1.0 200 OK<br>
+Cache-Control: no-cache<br>
+Content-Type: text/event-stream<br>
+Date: Mon, 14 Sep 2015 08:33:46 GMT<br><br>
+id: 7<br>
+event: msg<br>
+data: labas<br>
+event: timeout<br>
 data: 30s
